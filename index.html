@@ -1,14 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will Fu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<h2>Content Page</h2>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">WF</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<ul>
-  <li><a href="documents/Estimating_Forces_from_Vision-based_Tactile_Sensor_Images.pdf">CS231n Report</a> </li>
-  <li><a href="documents/Multispeaker_Speech_Synthesis_with_Configurable_Emotions.pdf">CS230 Report</a> </li>
-  <li><a href="documents/Stratified_Bagging_and_Boosting_of_Albert_Models_for_Question_Answering.pdf">CS224n Report</a> </li>
-</ul>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="avatar"><img src="images/avatar.jpg" alt="WF" /></div>
+    <h1>Will, Jiaxiang Fu</h1>
+    <p class="subtitle">Machine Learning Researcher &amp; Engineer</p>
+    <div class="hero-tags">
+      <span>Deep Learning</span>
+      <span>NLP</span>
+      <span>Computer Vision</span>
+      <span>Speech Synthesis</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-white">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <span class="section-label">About</span>
+      <h2>A bit about me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a researcher and engineer working at the intersection of machine learning, computer vision, NLP and speech technology. My projects span tactile force estimation, expressive multi-speaker TTS, and robust question answering.</p>
+          <p>I enjoy turning complex ML research into practical systems and exploring how models can perceive and interact with the physical world.</p>
+        </div>
+        <div class="about-detail">
+          <div class="about-row">
+            <span class="label">Location</span>
+            <span class="value">San Francisco Bay Area, US</span>
+          </div>
+          <div class="about-row">
+            <span class="label">Focus</span>
+            <span class="value">ML / AI Research & Engineering</span>
+          </div>
+          <div class="about-row">
+            <span class="label">Status</span>
+            <span class="value">Open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <span class="section-label">Skills</span>
+      <h2>Technical expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Computer Vision</h3>
+          <div class="skill-tags">
+            <span class="tag">CNNs</span>
+            <span class="tag">Tactile Sensing</span>
+            <span class="tag">Object Detection</span>
+            <span class="tag">OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>NLP &amp; Speech</h3>
+          <div class="skill-tags">
+            <span class="tag">BERT / ALBERT</span>
+            <span class="tag">TTS</span>
+            <span class="tag">Question Answering</span>
+            <span class="tag">HuggingFace</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Languages &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <span class="section-label">Experience</span>
+      <h2>Where I've worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="tl-date">2022 – Present</div>
+          <div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-body">
+            <h3>Machine Learning Engineer - Recommendation Systems</h3>
+            <div class="tl-company">Meta</div>
+            <p>Conducting industrial research on recommendation systems and developing novel SoTA techniques from the literature and shipping them into production models.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-date">2020 – 2022</div>
+          <div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-body">
+            <h3>Data Scientist, ML — Demand &amp; Supply</h3>
+            <div class="tl-company">Grab</div>
+            <p>Buliding ML models for demand-supply forecasting and optimization, e.g. time-series modelling, reinforcement learning, and deployment in a ride-hailing or delivery context.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-date">2017 – 2020</div>
+          <div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-body">
+            <h3>Machine Learning & Data Science</h3>
+            <div class="tl-company">2 Unspecified Investment Firms</div>
+            <p>Developing machine learning models and data systems for investment purposes, including deep learning NLP, time-series, and more traditional ML and stats problems.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <span class="section-label">Projects</span>
+      <h2>Research &amp; coursework</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Force Estimation from Tactile Sensors</h3>
+          <p>Developed a vision-based approach to estimate contact forces from tactile sensor images, enabling robots to perceive fine-grained physical interactions.</p>
+          <div class="project-footer">
+            <span class="project-tag">CS231n · Computer Vision</span>
+            <a class="project-link" href="documents/Estimating_Forces_from_Vision-based_Tactile_Sensor_Images.pdf">PDF →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Multispeaker Speech Synthesis</h3>
+          <p>Built a configurable TTS system generating speech from multiple speakers with controllable emotional expression using deep generative models.</p>
+          <div class="project-footer">
+            <span class="project-tag">CS230 · Deep Learning</span>
+            <a class="project-link" href="documents/Multispeaker_Speech_Synthesis_with_Configurable_Emotions.pdf">PDF →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Stratified Boosting for QA</h3>
+          <p>Applied stratified bagging and boosting over ALBERT models for question answering, improving robustness and accuracy on challenging NLP benchmarks.</p>
+          <div class="project-footer">
+            <span class="project-tag">CS224n · NLP</span>
+            <a class="project-link" href="documents/Stratified_Bagging_and_Boosting_of_Albert_Models_for_Question_Answering.pdf">PDF →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-label">Contact</span>
+      <h2>Get in touch</h2>
+      <div class="contact-wrapper">
+        <div>
+          <p>Feel free to reach out if you'd like to collaborate, discuss research, or just say hello.</p>
+          <div class="contact-links">
+            <div class="contact-row">
+              <div class="contact-icon">✉</div>
+              <a href="mailto:jfu003@e.ntu.edu.sg">jfu003@e.ntu.edu.sg</a>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">in</div>
+              <a href="#">LinkedIn</a>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">gh</div>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>Based in <strong>San Francisco Bay Area</strong>. Open to research collaborations, and interesting conversations about AI and robotics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Will Fu · Built with HTML &amp; CSS</p>
+  </footer>
 
 </body>
 </html>

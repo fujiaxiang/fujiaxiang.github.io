@@ -81,6 +81,8 @@ nav {
 .hero .subtitle {
   font-size: 1.15rem;
   opacity: 0.85;
+  color: #ccc;
+  font-weight: 500;
   margin-bottom: 1.2rem;
 }
 
